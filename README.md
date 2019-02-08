@@ -29,9 +29,9 @@ $ ./getLocalizationAndroid.sh
 
 ## Screenshot
 
-[](localsheet.png)
+[](https://raw.githubusercontent.com/tvpsoft/localization-toolkit-ios-android/master/localsheet.png)
 
-[](android.png)
+[](https://raw.githubusercontent.com/tvpsoft/localization-toolkit-ios-android/master/android.png)
 
-[](ios.png)
+[](https://raw.githubusercontent.com/tvpsoft/localization-toolkit-ios-android/master/ios.png)
 
