@@ -4,8 +4,6 @@ localizationGoogleDriveID='ID'
 #link to localization sheet
 localizationGoogleDriveLink="https://docs.google.com/spreadsheets/d/$localizationGoogleDriveID/export?format=tsv&id=$localizationGoogleDriveID&gid=0"
 
-echo $localizationGoogleDriveLink
-
 curl -s $localizationGoogleDriveLink > temploc
 
 #leave script resource is unavailable
@@ -49,14 +47,6 @@ for i in "${!localizations[@]}"
 do
   currentLocIndex=$(( $i + $firstLocIndex ))
   extension=${localizations[$i]}
-  if [ $(( $i )) == 8 ]
-  then
-    extension='zh'
-  fi
-  if [ $(( $i )) == 9 ]
-  then
-    extension='zh-rTW'
-  fi
   prefix='values-'
   directory=$prefix$extension
   rm -rf $rootDir$directory; mkdir $rootDir$directory;

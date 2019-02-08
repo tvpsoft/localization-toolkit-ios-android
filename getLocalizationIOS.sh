@@ -1,5 +1,5 @@
 
-localizationGoogleDriveID='1rDXDuGLowd_9L9TQRwAEjBj146eoVI4F7FpgZrqOrRk'
+localizationGoogleDriveID='ID'
 #link to localization sheet
 localizationGoogleDriveLink="https://docs.google.com/spreadsheets/d/$localizationGoogleDriveID/export?format=tsv&id=$localizationGoogleDriveID&gid=0"
 
