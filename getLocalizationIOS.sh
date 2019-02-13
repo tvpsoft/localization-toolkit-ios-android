@@ -1,7 +1,8 @@
 
 localizationGoogleDriveID='ID'
+localizationSheetID='sheetID'
 #link to localization sheet
-localizationGoogleDriveLink="https://docs.google.com/spreadsheets/d/$localizationGoogleDriveID/export?format=tsv&id=$localizationGoogleDriveID&gid=0"
+localizationGoogleDriveLink="https://docs.google.com/spreadsheets/d/$localizationGoogleDriveID/export?format=tsv&id=$localizationGoogleDriveID&gid=$localizationSheetID"
 
 curl -s $localizationGoogleDriveLink > temploc
 
