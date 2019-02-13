@@ -7,6 +7,7 @@ This is the script for export the localization in format needed of iOS and Andro
 | Param | Description |
 |-------|-------------|
 |localizationGoogleDriveID | The Id of GoogleSheet document, make sure the doc can be accessed by public with link |
+|localizationSheetID | the sheetID, default 0 |
 |keyIndex  | index of column containing ios localization key |
 |firstLocIndex  | index of first localization column in sheet file |
 |rootDir  | default is script folder. Change to the folder of the localization files located, you can save the time of copy, paste files | 
