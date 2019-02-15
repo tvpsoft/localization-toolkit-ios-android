@@ -1,6 +1,6 @@
 # Localization toolkit  for iOS and Android
 
-This is the script for export the localization in format needed of iOS and Android. 
+This is the script for export the localization using Google Sheet in formats needed of iOS and Android. 
 
 ## Parameters 
 
