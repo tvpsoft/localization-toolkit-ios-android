@@ -1,5 +1,5 @@
 localizationGoogleDriveID='ID'
-localizationSheetID='sheetID'
+localizationSheetID='0'
 #link to localization sheet
 localizationGoogleDriveLink="https://docs.google.com/spreadsheets/d/$localizationGoogleDriveID/export?format=tsv&id=$localizationGoogleDriveID&gid=$localizationSheetID"
 
@@ -25,7 +25,7 @@ rootDir='./'
 # if current localization column (currentLocIndex) value is empty, set english localization (firstLocIndex)
 awkscript='
 {
-	if ($keyIndex != "" && $keyIndex != "Identifier Android") {
+	if ($keyIndex != "" && $keyIndex != "ID Android") {
 		if ($currentLocIndex == "") {
 			actualLocIndex=firstLocIndex
 		}
@@ -36,7 +36,10 @@ awkscript='
     gsub("=", "=", $actualLocIndex);
     gsub("%1$s", "%s", $actualLocIndex);
     gsub("'"'"'", "\\'"'"'", $actualLocIndex);
-		print "\t<string name=\""$keyIndex"\">"$actualLocIndex"</string>";
+    gsub("<", "\\&lt;", $actualLocIndex);
+    gsub(">", "\\&gt;", $actualLocIndex);
+
+		print "\t<string name=\""$keyIndex"\">\""$actualLocIndex"\"</string>";
 		actualLocIndex=currentLocIndex
 	}
 }
